@@ -1,0 +1,87 @@
+:root{
+    /* 크기 */
+    --max-width-mobile:402px;
+
+    /* color */
+    --color-primary: #EF6905;     
+    /* --color-secondary: #9C9C9C;   
+    /* --color-accent: #;  */
+
+    /* 배경컬러 */
+    --bg-main: #ffffff;          
+    --bg-main-b: #111;           
+
+    /* 텍스트 컬러 */
+    --text-main: #000;        
+    --text-sub: #9C9C9C;          
+    /* --text-muted: #aaa;        */
+    --text-white: #fff;      
+
+    /* font */
+    --font-main: 'Noto Sans KR', sans-serif;
+    --font-sub: ' DM Serif Text', serif;
+    --font-sub2: 'Aleo', serif;
+    --font-sub3: 'Roboto', serif;
+
+    /* 폰트 크기 */
+    --font-size-xs: 0.75rem;     /* 12px */
+    --font-size-sm: 0.875rem;    /* 14px */
+    --font-size-base: 1rem;      /* 16px (기본) */
+    --font-size-md: 1.25rem;     /* 20px */
+    --font-size-lg: 1.5rem;      /* 24px */
+    --font-size-xl: 2rem;        /* 32px */
+
+    /* 폰트 굵기 */
+    --font-weight-thin: 100; 
+    --font-weight-Extralight: 200; 
+    --font-weight-light: 300; 
+    --font-weight-regular: 400; 
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-Extrabold: 800;
+
+    --spacing-mobile: 15px;
+}
+
+/* 정렬 */
+.flex_row_space{
+    display:flex; 
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_col_Center {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content:center ;
+    align-items: center;
+}
+
+.viewMore {
+    color:#ddd;
+    font-size:var(--font-weight-medium) ;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+    font-size: var(--font-size-xs);
+    padding:5px 20px;
+    border-left: 5px solid var(--color-primary);
+}
+/* 2. 기본 불릿(점) 스타일 커스텀 */
+/* 1. 기본 불릿 초기화 및 스타일 설정 */
+.swiper-pagination-bullet {
+    width: 8px;                  /* 불릿 크기 */
+    height: 8px;
+    background-color: transparent; /* 기본 배경색 제거 */
+    border: 1px solid rgba(255, 255, 255, 0.4);    /* 비활성화 상태: 회색 테두리 */
+    opacity: 1;                   /* Swiper 기본 불투명도(0.2) 해제 */
+    box-sizing: border-box;       /* 테두리가 크기에 영향을 주지 않도록 설정 */
+    margin: 0 6px !important;     /* 불릿 간격 조정 */
+  /* transition: all 0.3s ease; */
+}
+
+/* 2. 활성화된 불릿 스타일 (첫 번째 흰색 원) */
+.swiper-pagination-bullet-active {
+    background-color: #ffffff;    /* 내부 흰색 채우기 */
+    border-color: #ffffff;        /* 테두리도 흰색으로 통일 */
+}
