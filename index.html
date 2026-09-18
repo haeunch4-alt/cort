@@ -100,20 +100,20 @@
                     </a>
                 </li>
             </ul>
-            <div class="swiper guitar_pro">
-                <div class="guitar_top">
+            <div class="swiper guitar_pro flex_col_Center ">
+                <div class="guitar_top flex_row_space">
                     <div class="title">
                         <h3>GUITARS</h3>
                         <p>오직 콜트에서만 볼 수 있는 기타들</p>
                     </div>
-                    <div class="viewAll">VIEW ALL <img src="./images/guitar_arrow.png" alt="view all"></div>
+                    <div class="viewAll flex_row_space">VIEW ALL <img src="./images/guitar_arrow.png" alt="view all"></div>
                 </div>
                 <ul class="swiper-wrapper  guitar_btm">
                     <li class="swiper-slide">
                         <a href="javascript:void(0)">
-                            <p><img src="./images/guitar_pro1.jpg" alt="상품이미지"></p>
+                            <p class="img"><img src="./images/guitar_pro1.jpg" alt="상품이미지"></p>
                             <p class="gaTitle">C4 Deluxe Bass</p>
-                            <div class="proBtm">
+                            <div class="proBtm flex_row_space">
                                 <div class="colorchip">
                                     <span></span>
                                     <span></span>
@@ -124,48 +124,163 @@
                         </a>
                     </li>
                 </ul>
+                <div class="swiperBtn">
+                    <!-- 데스크탑만 -->
+                    <div class="swiper-button-prev pro_prev"><img src="./images/main_bnr_p.png" alt="이전으로 가기"></div>
+                    <div class="swiper-button-next pro_next"><img src="./images/main_bnr_n.png" alt="다음으로 가기"></div>
+                </div>
             </div>
-            <div class="ad">
+            <div class="ad flex_col_Center">
                 <p>Craftsmanship</p>
                 <h3>오감으로 확인가능한 장인 정신</h3>
                 <a href="javascript:void(0)" class="viewMore">VIEW MORE</a>
             </div>
-            <div class="swiper guitar_pro">
-                <div class="guitar_top">
+            <div class="swiper amp_pro">
+                <div class="amp_top">
                     <div class="title">
-                        <h3>GUITARS</h3>
-                        <p>오직 콜트에서만 볼 수 있는 기타들</p>
+                        <h3>AMPLIFIER</h3>
+                        <p>다양한 톤 쉐이핑과 강력한 출력으로 품격 있는 사운드 구현</p>
                     </div>
                     <div class="viewAll">VIEW ALL <img src="./images/guitar_arrow.png" alt="view all"></div>
                 </div>
-                <ul class="swiper-wrapper  guitar_btm">
+                <ul class="swiper-wrapper  amp_btm">
                     <li class="swiper-slide">
                         <a href="javascript:void(0)">
-                            <p><img src="./images/guitar_pro1.jpg" alt="상품이미지"></p>
-                            <p class="gaTitle">C4 Deluxe Bass</p>
+                            <p class="img"><img src="./images/amp_pro1.jpg" alt="상품이미지"></p>
+                            <p class="ampTitle">C4 Deluxe Bass</p>
                             <div class="proBtm">
                                 <div class="colorchip">
                                     <span></span>
                                     <span></span>
                                     <span></span>
                                 </div>
-                                <div class="guPrice"><span>KRW</span><span>528,000</span></div>
+                                <div class="ampPrice"><span>KRW</span><span>528,000</span></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiperBtn">
+                    <!-- 데스크탑만 -->
+                    <div class="swiper-button-prev pro_prev"><img src="./images/main_bnr_p.png" alt="이전으로 가기"></div>
+                    <div class="swiper-button-next pro_next"><img src="./images/main_bnr_n.png" alt="다음으로 가기"></div>
+                </div>
+            </div>
+            <div class="swiper guitar_selec">
+                <div class="selecBtmWrap">
+                    <button type="button" class="selec_btm">Aucoustic-Electic</button>
+                    <button type="button" class="selec_btm">Cutway Acoustic</button>
+                    <button type="button" class="selec_btm">Multi-Scale Electics</button>
+                    <button type="button" class="selec_btm">7-String Electricts</button>
+                    <button type="button" class="selec_btm">8-String Electrics</button>
+                    <button type="button" class="selec_btm">5-String Basses</button>
+                    <button type="button" class="selec_btm">4-String Basses</button>
+                    <button type="button" class="selec_btm">All Solid Woods</button>
+                </div>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="javascript:void(0)">
+                            <p class="selecSub_title">Explore our</p>
+                            <p class="selecTitle">KX Series</p>
+                            <p class="selecImg"><img src="./images/selec_gui.png" alt="기타"></p>
+                            <p class="selecPro_title">KX700 EverTune</p>
+                            <p class="selecPro_explain">KX700 EverTune은 6현 기타가 보여줄 수 있는 강렬함과 탁월한 연주력의 한계를 뛰어넘습니다. 강력한 Seymo •••</p>
+                        </a>
+                    </li>
+                </ul>
+                <div class="swiperBtn">
+                    <div class="swiper-pagination selec_pag"></div>
+                    <!-- 데스크탑만 -->
+                    <div class="swiper-button-prev selec_prev"><img src="./images/main_bnr_p.png" alt="이전으로 가기"></div>
+                    <div class="swiper-button-next selec_next"><img src="./images/main_bnr_n.png" alt="다음으로 가기"></div>
+                </div>
+            </div>
+            <div class="swiper news">
+                <h2>NEWS</h2>
+                <div class="new_btnWrap">
+                    <button type="button" class="news_btn">모두 보기</button>
+                    <button type="button" class="news_btn">업데이트</button>
+                    <button type="button" class="news_btn">제품</button>
+                    <button type="button" class="news_btn">ARTIST</button>
+                </div>
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/newImg_1.jpg" alt="이미지"></p>
+                            <div class="news_contents">
+                                <p class="category">ARTIST</p>
+                                <p class="title">전 세계 아티스트들 사이에서 주목받고 <br>있는 'Modern Black'</p>
+                                <button type="button" class="viewMore">VIEW MORE</button>
                             </div>
                         </a>
                     </li>
                 </ul>
             </div>
-            <div class="guitar_selec">
-
-            </div>
-            <div class="news">
-
-            </div>
             <div class="find">
-                
+                <h3>매장 찾기</h3>
+                <p><img src="./images/find_img.jpg" alt="매장사진"></p>
+                <div class="findMap">
+                    <div class="find_btn">
+                        <button type="button" class="country">Country</button>
+                        <button type="button" class="city">City</button>
+                    </div>
+                    <div class="find_contents">
+                        <p><input type="text" name="find_write" id="find_write" placeholder="나라를 입력하세요."></p>
+                        <div class="find_result">
+                            <a href="javascript:void(0)" class=" findCon">
+                                <p class="find_sub">East asia</p>
+                                <p class="find_con">South Korea</p>
+                            </a>
+                            <a href="javascript:void(0)" class=" findCon">
+                                <p class="find_sub">Oceaniaa</p>
+                                <p class="find_con">Australia</p>
+                            </a>
+                            <a href="javascript:void(0)" class=" findCon">
+                                <p class="find_sub">Europe</p>
+                                <p class="find_con">United Kingdom & Ireland</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <footer>
-
+                <p><a href="index.html"><img src="./images/logo.png" alt="cort"></a></p>
+                <ul class="footerTitle">
+                    <li><a href="javascript:void(0)">Guitars</a>
+                        <ul>
+                            <li><a href="javascript:void(0)">Acoustic Guitars</a></li>
+                            <li><a href="javascript:void(0)">Electric Guitars</a></li>
+                            <li><a href="javascript:void(0)">Basses</a></li>
+                            <li><a href="javascript:void(0)">Amplifiers</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Support</a>
+                        <ul>
+                            <li><a href="javascript:void(0)">고객지원</a></li>
+                            <li><a href="javascript:void(0)">아티스트</a></li>
+                            <li><a href="javascript:void(0)">회사소개</a></li>
+                            <li><a href="javascript:void(0)">뉴스</a></li>
+                            <li><a href="javascript:void(0)">문의하기</a></li>
+                            <li><a href="javascript:void(0)">판매처찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">SNS</a>
+                        <ul class="sns">
+                            <li><a href="javascript:void(0)"><img src="./images/facebook.png" alt="facebook"><span>Facebook</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/youtube.png" alt="youtube"><span>Youtube</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/insta.png" alt="instagram"><span>Instagram</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/tiktok.png" alt="Tiktok"><span>Tiktok</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/blog.png" alt="Blog"><span>Blog</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer_btm">
+                    <a href="javascript:void(0)">Copyright 2026 Cortek. All rights reserved.</a>
+                    <a href="javascript:void(0)">이용 약관</a>
+                    <a href="javascript:void(0)">개인정보 처리방침</a>
+                    <a href="javascript:void(0)">쿠키</a>
+                    <a href="javascript:void(0)">HIGH CONTRAST</a>
+                </div>
             </footer>
         </main>
     </div>

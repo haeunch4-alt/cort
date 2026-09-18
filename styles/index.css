@@ -113,6 +113,7 @@
     line-height: 1.2;
     letter-spacing: 0.02rem;
     color:var(--text-white);
+    font-weight: var(--font-weight-regular);
 }
 #wrap main .category li a p {
     color:#cacaca;
@@ -120,6 +121,178 @@
     line-height: 1.2;
 }
 /* ---------------------------------------------- guitar_pro */
-/* ---------------------------------------------- header */
-/* ---------------------------------------------- header */
-/* ---------------------------------------------- header */
+#wrap main .guitar_pro {
+    width:var(--max-width-mobile);
+    padding-bottom:50px;
+    gap:24px;
+}
+#wrap main .guitar_pro .guitar_top { align-items: flex-end; width:100%; padding:0 15px;}
+#wrap main .guitar_pro .guitar_top .title {
+    display:flex; flex-flow: column nowrap; align-items: flex-start;
+    padding: 5px 0;
+}
+#wrap main .guitar_pro .guitar_top .title h3{
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
+    line-height:var(--font-line-1-2);
+    letter-spacing: -0.04rem;
+    margin-bottom:4px;
+}
+#wrap main .guitar_pro .guitar_top .title p{
+    font-size: var(--font-size-xs);
+    line-height:var(--font-line-1-2);
+    letter-spacing: -0.04rem;
+    color:var(--text-sub);
+}
+/* view all */
+#wrap main .guitar_pro .guitar_top .viewAll {} /* var */
+#wrap main .guitar_pro .guitar_top .viewAll img {} /* var */
+/* 상품 */
+#wrap main .guitar_pro .guitar_btm {width:100%; overflow: hidden;}
+#wrap main .guitar_pro .guitar_btm .swiper-slide {
+    width:235px !important;
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a {}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .img {
+    width:235px; height:420px;
+    margin-bottom:20px;
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .img img {width:100%;}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .gaTitle {
+    font-weight: var(--font-weight-medium);
+    line-height: var(--font-line-1-2);
+    letter-spacing: -0.04rem;
+    margin-bottom:20px;
+    padding: 0 10px;
+}
+/* 컬러칩+가격 */
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm {padding: 0 10px;}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm .colorchip {
+    width:max-content; display:flex; flex-flow: row nowrap;
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm .colorchip span {
+    display:block;
+    width:12px; height: 12px; border-radius: 100%;
+    background-color: aqua;
+    margin-right:4px;
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm .colorchip span.active {
+    border: 1px solid var(--text-main);
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm .guPrice {}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm .guPrice:nth-child(1) /* krw */ {
+    font-size: 0.625rem;
+    line-height: var(--font-line-1-2);
+    letter-spacing: -0.04rem;
+    margin-right:4px;
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide a .proBtm .guPrice:nth-child(2) /* price */ {
+    font-size: var(--font-size-s);
+    line-height: var(--font-line-1-2);
+    letter-spacing: -0.04rem;
+}
+/* swiperbtn (var) */
+#wrap main .guitar_pro .swiperBtn .pro_prev {}
+#wrap main .guitar_pro .swiperBtn .pro_next {}
+/* ---------------------------------------------- ad */
+#wrap main .ad {
+    width:var(--max-width-mobile); height:419px;
+    padding: 50px 15px 0;
+    background-image: url(../images/ad_back.jpg);
+    background-size: cover;
+    justify-content: flex-start;
+}
+#wrap main .ad p {}
+#wrap main .ad h3 {}
+#wrap main .ad .viewMore {} /* var */
+/* ---------------------------------------------- amp_pro */
+#wrap main .amp_pro {}
+#wrap main .amp_pro .amp_top {}
+#wrap main .amp_pro .amp_top .title {}
+#wrap main .amp_pro .amp_top .title h3 {}
+#wrap main .amp_pro .amp_top .title p {}
+#wrap main .amp_pro .amp_top .viewAll {} /* var */
+#wrap main .amp_pro .amp_top .viewAll img {} /* var */
+/* 상품 */
+#wrap main .amp_pro .amp_btm {} 
+#wrap main .amp_pro .amp_btm .swiper-slide {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .img {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .img img {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .ampTitle {}
+/* 컬러칩+가격 */
+#wrap main .amp_pro .amp_btm .swiper-slide a .proBtm {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .proBtm .colorchip {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .proBtm .colorchip span {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .proBtm .ampPrice {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .proBtm .ampPrice span:nth-child(1) /* krw */ {} 
+#wrap main .amp_pro .amp_btm .swiper-slide a .proBtm .ampPrice span:nth-child(2) /* price */ {} 
+/* swiperbtn (var) */
+#wrap main .guitar_pro .swiperBtn .pro_prev {}
+#wrap main .guitar_pro .swiperBtn .pro_next {}
+/* ---------------------------------------------- guitar_selec */
+#wrap main .guitar_selec {}
+#wrap main .guitar_selec .selecBtmWrap {}
+#wrap main .guitar_selec .selecBtmWrap .selec_btm {}
+#wrap main .guitar_selec .swiper-wrapper {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a .selecSub_title {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a .selecTitle {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a .selecImg {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a .selecImg img {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a .selecPro_title {}
+#wrap main .guitar_selec .swiper-wrapper .swiper-slide a .selecPro_explain {}
+#wrap main .guitar_selec .swiper-wrapper .swiperBtn .selec_pag {} /* var */
+#wrap main .guitar_selec .swiper-wrapper .swiperBtn .selec_prev {}
+#wrap main .guitar_selec .swiper-wrapper .swiperBtn .selec_next {}
+/* ---------------------------------------------- news */
+#wrap main .news {}
+#wrap main .news h2 {}
+#wrap main .news .new_btnWrap {}
+#wrap main .news .new_btnWrap .news_btn {}
+#wrap main .news .swiper-wrapper {}
+#wrap main .news .swiper-wrapper .swiper-slide {}
+#wrap main .news .swiper-wrapper .swiper-slide a {}
+#wrap main .news .swiper-wrapper .swiper-slide a p {}
+#wrap main .news .swiper-wrapper .swiper-slide a p img {}
+#wrap main .news .swiper-wrapper .swiper-slide a .news_contents {}
+#wrap main .news .swiper-wrapper .swiper-slide a .news_contents .category {}
+#wrap main .news .swiper-wrapper .swiper-slide a .news_contents .title {}
+#wrap main .news .swiper-wrapper .swiper-slide a .news_contents .viewMore {} /* var */
+/* ---------------------------------------------- find */
+#wrap main .find {}
+#wrap main .find h3 {}
+#wrap main .find p {}
+#wrap main .find p img {}
+#wrap main .find .find_map {}
+#wrap main .find .find_map .find_btn {}
+#wrap main .find .find_map .find_btn .country {}
+#wrap main .find .find_map .find_btn .city {}
+#wrap main .find .find_map .find_contents {}
+#wrap main .find .find_map .find_contents p {}
+#wrap main .find .find_map .find_contents p #find_write {}
+#wrap main .find .find_map .find_contents .find_result {}
+#wrap main .find .find_map .find_contents .find_result .findCon {}
+#wrap main .find .find_map .find_contents .find_result .findCon .find_sub {}
+#wrap main .find .find_map .find_contents .find_result .findCon .find_con {}
+/* ---------------------------------------------- footer */
+#wrap main footer {}
+#wrap main footer p {}
+#wrap main footer p a {}
+/*  */
+#wrap main footer .footerTitle {}
+#wrap main footer .footerTitle > li {}
+#wrap main footer .footerTitle > li > a {}
+#wrap main footer .footerTitle > li > ul {}
+#wrap main footer .footerTitle > li > ul > li {}
+#wrap main footer .footerTitle > li > ul > li > a {}
+/* sns */
+#wrap main footer .footerTitle > li > .sns {}
+#wrap main footer .footerTitle > li > .sns li {}
+#wrap main footer .footerTitle > li > .sns li a {}
+#wrap main footer .footerTitle > li > .sns li a img {}
+#wrap main footer .footerTitle > li > .sns li a span {}
+/* btm */
+#wrap main footer .footer_btm {}
+#wrap main footer .footer_btm a {}

@@ -11,10 +11,11 @@ const mainBnr = new Swiper('.main_bnr',{
         type:'bullets',
     }
 })
+
 const guitar = new Swiper('.guitar_pro',{
     navigation:{
-        prevEl:'.main_bnr_prev',
-        nextEl:'.main_bnr_next',
+        prevEl:'.pro_prev',
+        nextEl:'.pro_next',
     },
     slidesPerView: 1, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 10, //위 slidesPerview 여백
