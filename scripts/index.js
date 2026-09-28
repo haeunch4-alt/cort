@@ -17,6 +17,31 @@ const guitar = new Swiper('.guitar_pro',{
         prevEl:'.pro_prev',
         nextEl:'.pro_next',
     },
+    slidesPerView: 1.3,
+    spaceBetween: 10,
+    loop: true,
+    centeredSlides: true,
+})
+const amp = new Swiper('.amp_pro',{
+    navigation:{
+        prevEl:'.pro_prev',
+        nextEl:'.pro_next',
+    },
+    slidesPerView: 4, //640~1024 해상도 외 레이아웃 뷰 개수
+    spaceBetween: 10, //위 slidesPerview 여백
+})
+const agui_selec = new Swiper('.guitar_selec',{
+    navigation:{
+        prevEl:'.pro_prev',
+        nextEl:'.pro_next',
+    },
     slidesPerView: 1, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 10, //위 slidesPerview 여백
+    pagination: {
+        el: '.swiper-pagination',
+        //type:'bullets'(기본)
+        //type:'fraction' (숫자)
+        //type:'progressbar' (바)
+        type:'bullets',
+    }
 })
