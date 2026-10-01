@@ -1,6 +1,7 @@
 :root{
     /* 크기 */
     --max-width-mobile:402px;
+    --max-width-desk:1920px;
 
     /* color */
     --color-primary: #EF6905;     
@@ -47,6 +48,8 @@
 
     --spacing-mobile: 15px;
 }
+
+
 
 /* 정렬 */
 .flex_row_space{
@@ -112,11 +115,16 @@
 .colorchip span {
     display:block;
     width:12px; height: 12px; border-radius: 100%;
-    background-color: aqua;
-    margin-right:8px;
+    /* background-color: aqua; */
+    margin-right:5px;
     padding:2px;
 }
 .colorchip span.active {
     outline: 1px solid #000;
     outline-offset: 2px;
 }
+#wrap main .guitar_pro .guitar_btm .swiper-slide  a .proBtm .colorchip span:nth-child(1) {
+    background-color:#070707;
+}
+#wrap main .guitar_pro .guitar_btm .swiper-slide  a .proBtm .colorchip span:nth-child(2){background-color: #E7D9D8;}
+#wrap main .guitar_pro .guitar_btm .swiper-slide  a .proBtm .colorchip span:nth-child(3){background-color: #B5CBD0;}

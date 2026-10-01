@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CORT GUITARS</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <!--swiper 필수 css cdn 연결-->
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/var.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/reponsive.css">
     <script src="./scripts/index.js" defer></script>
     <!-- 웹글꼴 -->
     <!-- noto sans kr -->
@@ -59,10 +61,10 @@
             <div class="main_bnr swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <video src="./images/main_bnr.mp4" autoplay muted loop></video>
+                        <video src="./video/main_bnr.mp4" autoplay muted loop></video>
                         <p class="sub_title">NEW</p>
                         <h2 class="title">Space G6</h2>
-                        <p class="explain">G시리즈는 말 그대로 ‘빈티지의 완벽한 진화'라고 <br> 설명할 수 있습니다.</p>
+                        <p class="explain">G시리즈는 말 그대로 ‘빈티지의 완벽한 진화'라고  설명할 수 있습니다.</p>
                         <a class="viewMore" href="javascript:void(0)">VIEW MORE</a>
                     </div>
                     <div class="swiper-slide">
@@ -87,18 +89,20 @@
                         <p>보다 진보된 사운드를 구현하는 콜트의 기타 시리즈</p>
                     </a>
                 </li>
-                <li class="flex_col_Center">
-                    <a href="javascript:void(0)">
-                        <h3>AMPLIFIER</h3>
-                        <p>소리의 입체감을 더하는 신뢰할 수 있는 사운드 파트너</p>
-                    </a>
-                </li>
-                <li class="flex_col_Center">
-                    <a href="javascript:void(0)">
-                        <h3>ACCESSORIES</h3>
-                        <p>사운드의 한계를 넓혀주는 가치 있는 소품들</p>
-                    </a>
-                </li>
+                <ul id="desk">
+                    <li class="flex_col_Center">
+                        <a href="javascript:void(0)">
+                            <h3>AMPLIFIER</h3>
+                            <p>소리의 입체감을 더하는 신뢰할 수 있는 사운드 파트너</p>
+                        </a>
+                    </li>
+                    <li class="flex_col_Center">
+                        <a href="javascript:void(0)">
+                            <h3>ACCESSORIES</h3>
+                            <p>사운드의 한계를 넓혀주는 가치 있는 소품들</p>
+                        </a>
+                    </li>
+                </ul>
             </ul>
             <div class="swiper guitar_pro flex_col_Center ">
                 <div class="guitar_top flex_row_space">
@@ -194,13 +198,14 @@
                 </ul>
                 <div class="swiperBtn">
                     <!-- 데스크탑만 -->
-                    <div class="swiper-button-prev pro_prev"><img src="./images/main_bnr_p.png" alt="이전으로 가기"></div>
-                    <div class="swiper-button-next pro_next"><img src="./images/main_bnr_n.png" alt="다음으로 가기"></div>
+                    <div class="swiper-button-prev pro_prev"><img src="./images/gui_pro.png" alt="이전으로 가기"></div>
+                    <div class="swiper-button-next pro_next"><img src="./images/gui_pro.png" alt="다음으로 가기"></div>
                 </div>
             </div>
             <div class="ad flex_col_Center">
                 <p>Craftsmanship</p>
                 <h3>오감으로 확인가능한 장인 정신</h3>
+                <p class="desk_p">훌륭한 기타나 베이스는 시각적으로 뿐만 아니라 청각적으로도 그 품질을 확인할 수 있습니다. 숙련된 기술자들의 <br>섬세함과 첨단 기술이 결합되어 최고의 악기를 만들어냅니다.</p>
                 <a href="javascript:void(0)" class="viewMore">VIEW MORE</a>
             </div>
             <div class="swiper amp_pro flex_col_Center">
@@ -221,50 +226,46 @@
                                     <span class="active"></span>
                                     <span></span>
                                     <span></span>
+                                    <span></span>
+                                    <span></span>
                                 </div>
-                                <div class="ampPrice"><span>KRW</span><span>528,000</span></div>
+                                <div class="ampPrice"><span>KRW</span><span>199,000</span></div>
                             </div>
                         </a>
                     </li>
                     <li class="swiper-slide">
                         <a href="javascript:void(0)">
-                            <p class="img"><img src="./images/amp_pro1.jpg" alt="상품이미지"></p>
-                            <p class="ampTitle">C4 Deluxe Bass</p>
+                            <p class="img"><img src="./images/amp_pro2.jpg" alt="상품이미지"></p>
+                            <p class="ampTitle">Tube Craft CMV15</p>
                             <div class="proBtm flex_row_space">
                                 <div class="colorchip">
                                     <span class="active"></span>
-                                    <span></span>
-                                    <span></span>
                                 </div>
-                                <div class="ampPrice"><span>KRW</span><span>528,000</span></div>
+                                <div class="ampPrice"><span>KRW</span><span>790,000</span></div>
                             </div>
                         </a>
                     </li>
                     <li class="swiper-slide">
                         <a href="javascript:void(0)">
-                            <p class="img"><img src="./images/amp_pro1.jpg" alt="상품이미지"></p>
-                            <p class="ampTitle">C4 Deluxe Bass</p>
+                            <p class="img"><img src="./images/amp_pro3.jpg" alt="상품이미지"></p>
+                            <p class="ampTitle">AF30</p>
                             <div class="proBtm flex_row_space">
                                 <div class="colorchip">
                                     <span class="active"></span>
-                                    <span></span>
-                                    <span></span>
                                 </div>
-                                <div class="ampPrice"><span>KRW</span><span>528,000</span></div>
+                                <div class="ampPrice"><span>KRW</span><span>250,000</span></div>
                             </div>
                         </a>
                     </li>
                     <li class="swiper-slide">
                         <a href="javascript:void(0)">
-                            <p class="img"><img src="./images/amp_pro1.jpg" alt="상품이미지"></p>
-                            <p class="ampTitle">C4 Deluxe Bass</p>
+                            <p class="img"><img src="./images/amp_pro4.jpg" alt="상품이미지"></p>
+                            <p class="ampTitle">Tube Craft CMV15H </p>
                             <div class="proBtm flex_row_space">
                                 <div class="colorchip">
                                     <span class="active"></span>
-                                    <span></span>
-                                    <span></span>
                                 </div>
-                                <div class="ampPrice"><span>KRW</span><span>528,000</span></div>
+                                <div class="ampPrice"><span>KRW</span><span>600,000</span></div>
                             </div>
                         </a>
                     </li>
@@ -276,7 +277,7 @@
                 </div>
             </div>
             <div class="swiper guitar_selec">
-                <div class="selecBtmWrap flex_row_space">
+                <div class=" selecBtmWrap flex_row_space">
                     <button type="button" class="selec_btm">Aucoustic-Electic</button>
                     <button type="button" class="selec_btm">Cutway Acoustic</button>
                     <button type="button" class="selec_btm">Multi-Scale Electics</button>
@@ -287,6 +288,15 @@
                     <button type="button" class="selec_btm">All Solid Woods</button>
                 </div>
                 <ul class="swiper-wrapper">
+                    <li class="swiper-slide ">
+                        <a href="javascript:void(0)" class=" flex_col_Center">
+                            <p class="selecSub_title">Explore our</p>
+                            <p class="selecTitle">KX Series</p>
+                            <p class="selecImg"><img src="./images/selec_gui.png" alt="기타"></p>
+                            <p class="selecPro_title">KX700 EverTune</p>
+                            <p class="selecPro_explain">KX700 EverTune은 6현 기타가 보여줄 수 있는 강렬함과 탁월한 연주력의 한계를 뛰어넘습니다. 강력한 Seymo •••</p>
+                        </a>
+                    </li>
                     <li class="swiper-slide ">
                         <a href="javascript:void(0)" class=" flex_col_Center">
                             <p class="selecSub_title">Explore our</p>
@@ -323,7 +333,18 @@
                             </div>
                         </a>
                     </li>
+                    <li class="swiper-slide">
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/newImg_1.jpg" alt="이미지"></p>
+                            <div class="news_contents">
+                                <p class="category">ARTIST</p>
+                                <p class="title">전 세계 아티스트들 사이에서 주목받고 <br>있는 'Modern Black'</p>
+                                <button type="button" class="viewMore">VIEW MORE</button>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
+                <div class="swiper-pagination news_pag"></div>
             </div>
             <div class="find">
                 <h3>매장 찾기</h3>
