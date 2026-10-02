@@ -1,6 +1,7 @@
 /* index.css */
 /* body{margin:0 auto;} */
 .desk_p {display:none;}
+body {margin: 0 auto;}
 #wrap {
     min-width: var(--max-width-mobile);
     min-height: 874px;
@@ -11,7 +12,9 @@
 #wrap header {
     padding: 45px 15px 10px;
     background-color: var(--text-white);
-    position:sticky;
+    position:fixed;
+    z-index: 999;
+    width:100%;
 }
 #wrap header h1 {width:89px;}
 #wrap header h1 a {}
@@ -96,6 +99,7 @@
     width:372px; height:200px;
     background-color:rgb(0, 0, 0, 0.4);
     position:relative;
+    margin: 0 auto;
 }
 #wrap main .category li:nth-child(1) {
     background-image: url(../images/category_1.jpg);
@@ -230,7 +234,7 @@
 }
 #wrap main .ad .viewMore {left: 77.5px; top:168px; color:#ddd;} /* var */
 /* ---------------------------------------------- amp_pro */
-#wrap main .amp_pro {}
+#wrap main .amp_pro {margin:0 auto;}
 #wrap main .amp_pro .amp_top { 
     align-items: flex-end; width:100%; padding:0 15px 10px;
     flex-flow: row wrap; justify-content: flex-end;
@@ -257,8 +261,9 @@
 /* 상품 */
 #wrap main .amp_pro .amp_btm {
     display:flex; flex-flow: row wrap;
-    padding: 0 15px;
+    padding: 0 15px;    
 } 
+#wrap main .amp_pro .amp_btm{margin:0 auto;}
 #wrap main .amp_pro .amp_btm .swiper-slide {width:191px !important;} 
 #wrap main .amp_pro .amp_btm .swiper-slide a {} 
 #wrap main .amp_pro .amp_btm .swiper-slide a .img {width:100%; margin-bottom:8px;} 
@@ -385,7 +390,7 @@
     bottom:20px;
 }
 #wrap main .news .swiper-wrapper {}
-#wrap main .news .swiper-wrapper .swiper-slide {}
+#wrap main .news .swiper-wrapper .swiper-slide {width:100%;}
 #wrap main .news .swiper-wrapper .swiper-slide a {}
 #wrap main .news .swiper-wrapper .swiper-slide a p {width:100%; height:240px;}
 #wrap main .news .swiper-wrapper .swiper-slide a p img {width:100%;}
@@ -445,7 +450,7 @@
     background-image: url(../images/find_active.png);
     position:relative;
 }
-#wrap main .find .findMap .find_btn .country span {position:absolute; left:37px; bottom:19px;}
+#wrap main .find .findMap .find_btn .country span {position:absolute; left:37px; top:16px;}
 #wrap main .find .findMap .find_btn .city span {color:var(--text-white); position:absolute; top:16px; left:50px;}
 #wrap main .find .findMap .find_btn  span {
     font-size: var(--font-size-xs);

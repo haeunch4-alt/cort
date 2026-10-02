@@ -37,11 +37,17 @@ const amp = new Swiper('.amp_pro',{
     },
     slidesPerView: 4, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 10, //위 slidesPerview 여백
+        1120: { //640 이상일 경우
+            slidesPerView: 4, //레이아웃 2열
+            centeredSlides: false,
+            loop: false,
+            slidesOffsetBefore: 0
+        },
 })
 const agui_selec = new Swiper('.guitar_selec',{
     navigation:{
-        prevEl:'.pro_prev',
-        nextEl:'.pro_next',
+        prevEl:'.selec_prev',
+        nextEl:'.selec_next',
     },
     slidesPerView: 1, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 10, //위 slidesPerview 여백
@@ -54,7 +60,7 @@ const agui_selec = new Swiper('.guitar_selec',{
     }
 })
 const news = new Swiper('.news',{
-    slidesPerView: 1, //640~1024 해상도 외 레이아웃 뷰 개수
+    slidesPerView: 1.2, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 10, //위 slidesPerview 여백
     pagination: {
         el: '.swiper-pagination',
