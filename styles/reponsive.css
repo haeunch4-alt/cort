@@ -137,9 +137,11 @@
     }
     /* ---------------------------------------------- guitar_pro */
     #wrap main .guitar_pro {
-        padding:50px 240px 130px;
+        padding:50px 0 130px;
         gap:10px;
         position:relative;
+        /* overflow:hidden */
+        width:max-content;
     }
     #wrap main .guitar_pro .guitar_top {padding:0px;}
     #wrap main .guitar_pro .guitar_top .title {
@@ -161,10 +163,10 @@
     } /* var */
     #wrap main .guitar_pro .guitar_top .viewAll img {} /* var */
     /* 상품 */
-    #wrap main .guitar_pro .guitar_btm {width: 1440px; overflow: hidden;}
+    #wrap main .guitar_pro .guitar_btm {width: 1440px;}
     #wrap main .guitar_pro .guitar_btm .swiper-slide {
         width:280px !important;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     #wrap main .guitar_pro .guitar_btm .swiper-slide a {}
     #wrap main .guitar_pro .guitar_btm .swiper-slide a .img {
@@ -405,9 +407,9 @@
         margin-bottom:26px;
         padding: 6px 0px;
     }
-    #wrap main .find> p {width:715px; height: 477px; order: 1; overflow: hidden; margin-right:10px;}
-    #wrap main .find p img {width:100%; }
-    #wrap main .find .findMap {order: 2; width:715px; height: 477px; overflow:hidden; }
+    #wrap main .find> .find_img{width:715px; height: 477px; order: 1; overflow: hidden; margin-right:10px;}
+    #wrap main .find .find_img img {width:100%; }
+    #wrap main .find .findMap {order: 2; width:715px; height: 477px;  overflow:hidden; }
     #wrap main .find .findMap .find_btn {
         width:100%;
         justify-content: flex-start;

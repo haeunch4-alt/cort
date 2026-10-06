@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/reponsive.css">
     <link rel="stylesheet" href="./styles/pro_reponsive.css">
-    <script src="./scripts/product.js"></script>
+    <script src="./scripts/product.js" defer></script>
     <!-- 웹글꼴 -->
     <!-- noto sans kr -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -58,49 +58,127 @@
             </div>
         </header>
         <main>
-            <div class="pro_left">
-                <p><img src="./images/pro_main.jpg" alt="상품사진"></p>
-                <div class="pro_side">
-                    <button type="button" class="proSide proSide1 active"><img src="./images/pro_main.jpg" alt="상품"></button>
-                    <button type="button" class="proSide proSide2"><img src="./images/pro_side2.jpg" alt="상품"></button>
-                    <button type="button" class="proSide proSide3"><img src="./images/pro_side3.jpg" alt="상품"></button>
-                    <button type="button" class="proSide proSide4"><img src="./images/pro_side4.jpg" alt="상품"></button>
-                </div>
-            </div>
-            <div class="pro_right">
-                <div class="pro_category">
-                    <a href="javascript:void(0)">All Product</a>
-                    <a href="javascript:void(0)">Basses Guitars</a>
-                    <a href="javascript:void(0)">Artisan Series</a>
-                </div>
-                <div class="pro_title">
-                    <p>Artisan Series</p>
-                    <h2>C4 Deluxe Bass</h2>
-                </div>
-                <div class="pro_description">
-                    <p class="subTitle">DESCRIPTION</p>
-                    <p class="explain">콜트의 프리미엄 베이스 라인업인 아티산 시리즈의 C4 Deluxe입니다. 화사하고 선명한 솔리드 컬러의 포플러 바디재를 사용하였으며, MetalCraft M 브릿지, Bartolini® MK-1 픽업, Markbass® MB-1 프리앰프 등 프리미엄급 하드웨어를 갖추어 사운드적으로도 큰 만족감을 선사할 것입니다.</p>
-                </div>
-                <div class="color_btn_wrap">
-                    <button type="button" class="color_btn"><img src="./images/pro_main.jpg" alt="상품"></button>
-                    <button type="button" class="color_btn"><img src="./images/pro_color1.jpg" alt="상품"></button>
-                    <button type="button" class="color_btn"><img src="./images/pro_color2.jpg" alt="상품"></button>
-                </div>
-                <div class="pro_spec">
-                    <div class="spec_top">
-                        <p class="specTitle">Poplar Body</p>
-                        <p class="specContent">포플러는 알더와 비슷한 음색을 가진 고급 목재입니다.</p>
-                    </div>
-                    <div class="spec_btm">
-                        <p class="specTitle">Bartolini® MK-1 Pickups</p>
-                        <p class="specContent">특유의 파워풀한 저음역대부터 펀치감 있는 중음역대, 왜곡되지 않은 고음역대까지 살리는 스플릿 코일 타입의 솝바 픽업입니다.</p>
+            <div class="pro">
+                <div class="pro_left">
+                    <p><img src="./images/pro_main.jpg" alt="상품사진"></p>
+                    <div class="pro_side">
+                        <button type="button" class="proSide proSide1 active"><img src="./images/pro_main.jpg" alt="상품"></button>
+                        <button type="button" class="proSide proSide2"><img src="./images/pro_side2.jpg" alt="상품"></button>
+                        <button type="button" class="proSide proSide3"><img src="./images/pro_side3.jpg" alt="상품"></button>
+                        <button type="button" class="proSide proSide4"><img src="./images/pro_side4.jpg" alt="상품"></button>
                     </div>
                 </div>
-                <div class="buy_btnWrap">
-                    <a href="javascript:void(0)" class="dealer">판매처 찾기</a>
-                    <a href="javascript:void(0)" class="dealer">제품 상세사항</a>
+                <div class="pro_right">
+                    <div class="pro_category flex_row_space">
+                        <a href="javascript:void(0)">All Product</a>
+                        <a href="javascript:void(0)">Basses Guitars</a>
+                        <a href="javascript:void(0)">Artisan Series</a>
+                    </div>
+                    <div class="pro_title">
+                        <p>Artisan Series</p>
+                        <h2>C4 Deluxe Bass</h2>
+                    </div>
+                    <div class="pro_description">
+                        <p class="subTitle">DESCRIPTION</p>
+                        <p class="explain">콜트의 프리미엄 베이스 라인업인 아티산 시리즈의 C4 Deluxe입니다. 화사하고 선명한 솔리드 컬러의 포플러 바디재를 사용하였으며, MetalCraft M 브릿지, Bartolini® MK-1 픽업, Markbass® MB-1 프리앰프 등 프리미엄급 하드웨어를 갖추어 사운드적으로도 큰 만족감을 선사할 것입니다.</p>
+                    </div>
+                    <div class="color_btn_wrap">
+                        <button type="button" class="color_btn active"><img src="./images/pro_color.png" alt="상품"></button>
+                        <button type="button" class="color_btn"><img src="./images/pro_color1.jpg" alt="상품"></button>
+                        <button type="button" class="color_btn"><img src="./images/pro_color2.jpg" alt="상품"></button>
+                    </div>
+                    <div class="pro_spec">
+                        <h3>SPEC</h3>
+                        <div class="spec_top flex_row_space">
+                            <p class="specTitle">Poplar Body</p>
+                            <p class="specContent">포플러는 알더와 비슷한 음색을 가진 고급 목재입니다.</p>
+                        </div>
+                        <div class="spec_btm flex_row_space">
+                            <p class="specTitle">Bartolini® MK-1 Pickups</p>
+                            <p class="specContent">특유의 파워풀한 저음역대부터 펀치감 있는 중음역대, 왜곡되지 않은 고음역대까지 살리는 스플릿 코일 타입의 솝바 픽업입니다.</p>
+                        </div>
+                    </div>
+                    <div class="buy_btnWrap flex_row_space">
+                        <a href="javascript:void(0)" class="dealer">판매처 찾기</a>
+                        <a href="javascript:void(0)" class="buy_spec">제품 상세사항</a>
+                    </div>
                 </div>
             </div>
+            <div class="pro_btm">
+                <h3>당신의 톤을 완성하는 순간</h3>
+                <ul class="pro_btmPro flex_row_space">
+                    <li>
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/recommend1.jpg" alt="상품"></p>
+                            <h4>Acoustic Guitar Soft-Side </h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/recommend2.jpg" alt="상품"></p>
+                            <h4>Premium Electric Guitar Bag </h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/recommend3.jpg" alt="상품"></p>
+                            <h4>15Ft Noiseless Cotton Cable</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/recommend4.jpg" alt="상품"></p>
+                            <h4>Mini Guitar Clip-On Tuner</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">
+                            <p><img src="./images/recommend5.jpg" alt="상품"></p>
+                            <h4>Standard Dreadnought</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <footer>
+                <p><a href="index.html"><img src="./images/logo_white.png" alt="cort"></a></p>
+                <ul class="footerTitle">
+                    <li><a href="javascript:void(0)">Guitars</a>
+                        <ul>
+                            <li><a href="javascript:void(0)">Acoustic Guitars</a></li>
+                            <li><a href="javascript:void(0)">Electric Guitars</a></li>
+                            <li><a href="javascript:void(0)">Basses</a></li>
+                            <li><a href="javascript:void(0)">Amplifiers</a></li>
+                            <li><a href="javascript:void(0)">Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">Support</a>
+                        <ul>
+                            <li><a href="javascript:void(0)">고객지원</a></li>
+                            <li><a href="javascript:void(0)">아티스트</a></li>
+                            <li><a href="javascript:void(0)">회사소개</a></li>
+                            <li><a href="javascript:void(0)">뉴스</a></li>
+                            <li><a href="javascript:void(0)">문의하기</a></li>
+                            <li><a href="javascript:void(0)">판매처찾기</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="javascript:void(0)">SNS</a>
+                        <ul class="sns">
+                            <li><a href="javascript:void(0)"><img src="./images/facebook.png" alt="facebook"><span>Facebook</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/youtube.png" alt="youtube"><span>Youtube</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/insta.png" alt="instagram"><span>Instagram</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/tiktok.png" alt="Tiktok"><span>Tiktok</span></a></li>
+                            <li><a href="javascript:void(0)"><img src="./images/blog.png" alt="Blog"><span>Blog</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="footer_btm">
+                    <a href="javascript:void(0)">Copyright 2026 Cortek. All rights reserved.</a>
+                    <a href="javascript:void(0)">이용 약관</a>
+                    <a href="javascript:void(0)">개인정보 처리방침</a>
+                    <a href="javascript:void(0)">쿠키</a>
+                    <a href="javascript:void(0)">HIGH CONTRAST</a>
+                </div>
+            </footer>
         </main>
     </div>
 </body>

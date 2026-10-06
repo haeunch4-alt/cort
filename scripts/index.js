@@ -60,11 +60,16 @@ const agui_selec = new Swiper('.guitar_selec',{
     }
 })
 const news = new Swiper('.news',{
-    slidesPerView: 1.2, //640~1024 해상도 외 레이아웃 뷰 개수
+    slidesPerView: 1, //640~1024 해상도 외 레이아웃 뷰 개수
     spaceBetween: 10, //위 slidesPerview 여백
     pagination: {
         el: '.swiper-pagination',
         type:'bullets',
+    },
+ breakpoints: { //반응형 조건 속성
+        1120: { //640 이상일 경우
+          slidesPerView: 1.2, //레이아웃 2열
+        },
     }
 })
 const guitarSelec = new Swiper('.guitar_selec',{
@@ -74,6 +79,7 @@ const guitarSelec = new Swiper('.guitar_selec',{
         el: '.selec_pag',
         type:'bullets',
     }
+    
 })
 
 const newsBtns = document.querySelectorAll('.news .news_btn');
