@@ -37,12 +37,14 @@ body {margin: 0 auto;}
 #wrap header .header_right .lang span {}
 #wrap header .header_right .lang img {}
 /* ------------------------------------------------------ */
-#wrap header nav {width:100%;}
+#wrap header nav {width:100%; position:relative; justify-content: space-between;}
 #wrap header nav .gnb {width:100%;}
-#wrap header nav .gnb > li {width:100%; display:flex; flex-flow:column nowrap;}
+#wrap header nav .gnb > li {width:100%; margin-right:40px; white-space: nowrap; position:relative;}
 #wrap header nav .gnb > li > .snb {
+    position:absolute;
+    bottom:-162px;
     background-color:#111;
-    width:100%;
+    width:0%;
     display:flex; flex-flow: row nowrap;
 }
 #wrap header nav .gnb > li > .snb > li {}
